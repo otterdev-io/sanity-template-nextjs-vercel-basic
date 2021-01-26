@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "title": "Next.js Barebones Starter",
+  "title": "Next.js Tailwind and Extras starter",
   "description": "Minimal and barebones example of a starter for deployment on Vercel with Next.js",
   "previewMedia": {
     "type": "image",

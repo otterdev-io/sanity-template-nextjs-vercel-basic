@@ -12,11 +12,14 @@
     "postinstall": "lerna bootstrap"
   },
   "dependencies": {
+    "@otterdev/next-sanity-extra": "^0.1.13",
+    "@otterdev/sanity-react-extra": "^0.1.11",
+    "lerna": "^3.22.1",
     "next": "10.0.0",
     "next-sanity": "^0.1.7",
+    "next-seo": "^4.17.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-json-pretty": "^2.2.0",
-    "lerna": "^3.22.1"
+    "react-json-pretty": "^2.2.0"
   }
 }
