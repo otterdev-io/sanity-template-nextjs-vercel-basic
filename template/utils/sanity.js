@@ -1,9 +1,12 @@
 import { setupNextSanity } from "@otterdev/next-sanity-extra";
 
 // Standard sanity config
-// Don't forget to set:
-// SANITY_API_TOKEN (created from sanity admin)
-/// SANITY_PREVIEW_TOKEN (generate this yourself)
+// Don't forget:
+// run ./setup-env.sh
+// Setup SANITY_API_TOKEN (created from sanity admin)
+/// Set SANITY_PREVIEW_TOKEN (generate this yourself)
+
+
 const config = {
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET,

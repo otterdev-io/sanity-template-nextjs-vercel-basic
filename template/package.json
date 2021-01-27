@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
+    "dev:all": "next dev --port $PORT & cd studio && sanity start",
     "build": "npm run build:sanity && npm run build:web",
     "build:web": "next build",
     "start:web": "next start",
@@ -13,7 +14,7 @@
   },
   "dependencies": {
     "@otterdev/next-sanity-extra": "^0.1.13",
-    "@otterdev/sanity-react-extra": "^0.1.11",
+    "@otterdev/sanity-react-extra": "^0.2.1",
     "autoprefixer": "^10.2.3",
     "lerna": "^3.22.1",
     "next": "10.0.0",
