@@ -1,7 +1,7 @@
 {
-  "name": "sanity-template-vercel-basic",
+  "name": "sanity-template-nextjs-ts-vercel-tailwind-extras",
   "version": "1.0.0",
-  "description": "This is a barebones example of how to create a starter template for <a href=\"https://www.sanity.io/create?template=sanity-io/sanity-template-netlify-poc\">sanity.io/create</a>.",
+  "description": "Sets up nextjs with typescript, vercel, tailwind, eslint, prettier, and extras",
   "main": "index.js",
   "scripts": {
     "watch": "sanity-template build && cp .env.local.test build/.env.local && sanity-template watch --template-values template-values.json",

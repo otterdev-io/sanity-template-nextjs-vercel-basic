@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "title": "Next.js Tailwind and Extras starter",
-  "description": "Minimal and barebones example of a starter for deployment on Vercel with Next.js",
+  "title": "Next.js TS, Vercel, Tailwind, Extras starter",
+  "description": "Sets up NextJS with Typescript, deployed to vercel, with tailwind, eslint, prettier, and extras",
   "previewMedia": {
     "type": "image",
-    "src": "assets/frontend.png",
-    "alt": "Next.js frontend with Sanity data displaying"
+    "src": "assets/stack.svg",
+    "alt": "The stack"
   },
   "technologies": [
     {
