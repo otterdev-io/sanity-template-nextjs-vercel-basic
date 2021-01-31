@@ -1,7 +1,7 @@
 {
   "root": true,
   "project": {
-    "name": "Next.js + Sanity + Vercel + Extras Starter",
+    "name": "Next.js TS, Sanity, Vercel, Extras Starter",
     "basePath": "/studio"
   },
   "api": {
