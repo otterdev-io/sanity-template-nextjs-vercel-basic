@@ -1,7 +1,7 @@
 #!/bin/sh
-vercel env pull
+vercel env pull .env.local
 set -o allexport
-source ./.env
+source ./.env.local
 for ENV in "development" "preview" "production"
 do
 	echo -n "$SANITY_STUDIO_API_PROJECT_ID" | vercel env add plain NEXT_PUBLIC_SANITY_PROJECT_ID "$ENV"
