@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next",
-    "dev:all": "next dev --port $PORT & cd studio && sanity start",
+    "dev:all": "(next dev & cd studio && sanity start)",
     "build": "npm run build:sanity && npm run build:web",
     "build:web": "next build",
     "start:web": "next start",
