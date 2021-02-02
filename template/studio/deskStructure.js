@@ -47,7 +47,7 @@ export default () =>
               S.view
                 .component(SitePreview)
                 .icon(GrView)
-                .options({ slug: "/" })
+                .options({ slug: "" })
                 .title("Preview"),
             ])
         ),
