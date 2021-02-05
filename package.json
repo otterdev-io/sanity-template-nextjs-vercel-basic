@@ -1,13 +1,37 @@
 {
-  "name": "sanity-template-nextjs-ts-vercel-tailwind-extras",
-  "version": "1.0.0",
-  "description": "Sets up nextjs with typescript, vercel, tailwind, eslint, prettier, and extras",
-  "main": "index.js",
-  "scripts": {
-    "watch": "sanity-template build && cp .env.local.test build/.env.local && sanity-template watch --template-values template-values.json",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "simple-site",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"next\" \"cd studio && sanity start\"",
+        "build": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build",
+        "start": "vercel dev",
+        "postinstall": "lerna bootstrap"
+    },
+    "dependencies": {
+        "@otterdev/next-sanity-extra": "^0.1.14",
+        "@otterdev/sanity-react-extra": "^0.2.3",
+        "autoprefixer": "^10.2.4",
+        "lerna": "^3.22.1",
+        "next": "10.0.6",
+        "next-sanity": "^0.1.8",
+        "next-seo": "^4.19.0",
+        "postcss": "^8.2.4",
+        "react": "17.0.1",
+        "react-dom": "17.0.1",
+        "react-json-pretty": "^2.2.0",
+        "tailwindcss": "^2.0.2"
+    },
+    "devDependencies": {
+        "@sanity/cli": "^2.2.6",
+        "@typescript-eslint/eslint-plugin": "^4.14.2",
+        "@typescript-eslint/parser": "^4.14.2",
+        "eslint": "^7.19.0",
+        "eslint-config-airbnb": "^18.2.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-react": "^7.22.0",
+        "eslint-plugin-react-hooks": "^4.2.0",
+        "typescript": "^4.1.3"
+    }
 }

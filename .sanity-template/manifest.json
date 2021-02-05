@@ -4,7 +4,7 @@
   "description": "Sets up NextJS with Typescript, deployed to vercel, with tailwind, eslint, prettier, and extras",
   "previewMedia": {
     "type": "image",
-    "src": "assets/stack.svg",
+    "src": ".sanity-template/assets/stack.svg",
     "alt": "The stack"
   },
   "technologies": [
@@ -22,6 +22,10 @@
   "deployment": {
     "provider": "vercel",
     "studio": { "basePath": "/studio" },
+    "envVars": {
+      "projectId": ["NEXT_PUBLIC_SANITY_PROJECT_ID"],
+      "dataset": ["NEXT_PUBLIC_SANITY_DATASET"]
+    },
     "corsOrigins": [
       {
         "origin": "http://localhost:3000",
