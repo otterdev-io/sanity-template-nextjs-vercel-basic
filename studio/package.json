@@ -1,30 +1,30 @@
 {
-  "name": "sanitytemplatecontent",
-  "private": true,
-  "version": "1.0.1",
-  "description": "",
-  "main": "package.json",
-  "author": "Knut Melvær <knut@sanity.io>",
-  "license": "UNLICENSED",
-  "scripts": {
-    "start": "sanity start",
-    "test": "sanity check",
-    "build": "sanity build"
-  },
-  "keywords": [
-    "sanity"
-  ],
-  "dependencies": {
-    "@sanity/base": "^2.3.3",
-    "@sanity/components": "^2.2.6",
-    "@sanity/core": "^2.3.3",
-    "@sanity/default-layout": "^2.3.3",
-    "@sanity/default-login": "^2.2.6",
-    "@sanity/desk-tool": "^2.3.3",
-    "@sanity/vision": "^2.2.6",
-    "prop-types": "^15.7",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-icons": "^4.1.0"
-  }
+    "name": "sanitytemplatecontent",
+    "private": true,
+    "version": "1.0.1",
+    "description": "",
+    "main": "package.json",
+    "author": "Knut Melvær <knut@sanity.io>",
+    "license": "UNLICENSED",
+    "scripts": {
+        "start": "SANITY_ACTIVE_ENV=development sanity start",
+        "test": "sanity check",
+        "build": "sanity build"
+    },
+    "keywords": [
+        "sanity"
+    ],
+    "dependencies": {
+        "@sanity/base": "^2.3.3",
+        "@sanity/components": "^2.2.6",
+        "@sanity/core": "^2.3.3",
+        "@sanity/default-layout": "^2.3.3",
+        "@sanity/default-login": "^2.2.6",
+        "@sanity/desk-tool": "^2.3.3",
+        "@sanity/vision": "^2.2.6",
+        "prop-types": "^15.7",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1",
+        "react-icons": "^4.1.0"
+    }
 }

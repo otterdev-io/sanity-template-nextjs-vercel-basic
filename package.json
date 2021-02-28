@@ -3,7 +3,7 @@
     "version": "0.1.0",
     "private": true,
     "scripts": {
-        "dev": "concurrently \"next\" \"cd studio && sanity start\"",
+        "dev": "concurrently -n \"web,sanity\" -c \"green,blue\" \"next\" \"cd studio && SANITY_ACTIVE_ENV=development sanity start\"",
         "build": "echo 'Building Sanity to public/studio…' && cd studio && sanity build ../public/studio -y && cd .. && next build",
         "start": "vercel dev",
         "postinstall": "lerna bootstrap"
