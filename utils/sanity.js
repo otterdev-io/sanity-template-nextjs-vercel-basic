@@ -1,4 +1,4 @@
-import { setupNextSanity } from '@otterdev/next-sanity-extra'
+import { setupNextSanity } from 'next-sanity-extra'
 
 // Standard sanity config
 // Don't forget:
