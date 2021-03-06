@@ -20,7 +20,7 @@ export const getStaticProps = async (context) => ({
 export default function Home(props) {
     const {
         data: { site, landingPage },
-    } = useSanityQuery(query, props)
+    } = useSanityQuery({query, props})
 
     return (
         <div>
