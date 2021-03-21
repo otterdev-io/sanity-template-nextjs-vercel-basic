@@ -20,7 +20,7 @@ const config = {
 }
 
 export const {
-    getClient,
+    sanityClient,
     imageUrlBuilder,
     PortableText,
     sanityStaticProps,

@@ -12,6 +12,9 @@ http://localhost:3333
 # Post setup
 You will probably want to perform the following steps to get everything nice after the setup:
 
+- Create an API TOKEN (read/write) at manage.sanity.io
+- Ensure the site url, localhost:3333, and localhost:3000 are added as CORS origins at manage.sanity.io
+
 - Update project title in sanity.json
 
 - set the following vars on vercel:
