@@ -1,9 +1,9 @@
-import JSONPretty from 'react-json-pretty'
-
 import { imageUrlBuilder, sanityStaticProps, useSanityQuery } from '../utils/sanity'
 import { groq } from 'next-sanity'
+import { GetStaticProps } from 'next'
 import { NextSeo } from 'next-seo'
 import { withDimensions, SanityImg } from 'sanity-react-extra'
+import { SanityProps } from 'next-sanity-extra'
 
 const query = groq`{
   "site": *[_id == "site"][0] {
@@ -13,11 +13,11 @@ const query = groq`{
   "landingPage": *[_id == "landingPage"][0]
 }`
 
-export const getStaticProps = async (context) => ({
-    props: await sanityStaticProps(query, context),
+export const getStaticProps: GetStaticProps = async (context) => ({
+    props: await sanityStaticProps({ query, context }),
 })
 
-export default function Home(props) {
+export default function Home(props: SanityProps) {
     const {
         data: { site, landingPage },
     } = useSanityQuery(query, props)

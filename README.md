@@ -1,4 +1,4 @@
-# Barebones Next.js, Vercel, Sanity.io Starter
+# Barebones Next.js Typescript, Vercel, Sanity.io Starter
 This is a sanity 1-click starter. It can be created at https://sanity.io/create?template=otterdev-io/sanity-template-nextjs-vercel-extra
 # Running
 `npm run dev`
