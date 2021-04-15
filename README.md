@@ -13,7 +13,6 @@ http://localhost:3333
 You will probably want to perform the following steps to get everything nice after the setup:
 
 - Create an API TOKEN (read/write) at manage.sanity.io
-- Ensure the site url, localhost:3333, and localhost:3000 are added as CORS origins at manage.sanity.io
 
 - Update project title in sanity.json
 
@@ -28,8 +27,8 @@ You will probably want to perform the following steps to get everything nice aft
   - SANITY_STUDIO_PREVIEW_TOKEN (the same token you created on vercel)
   - SANITY_API_TOKEN (the same token you created at manage.sanity.io)
 
-- create studio/.env.development and .env.production with the following vars:
+- create studio/.env.development with the following vars:
   - SANITY_STUDIO_API_PROJECT_ID
   - SANITY_STUDIO_API_DATASET
-  - SANITY_STUDIO_PREVIEW_URL = "http://localhost:3000"
+  - SANITY_STUDIO_PREVIEW_URL=http://localhost:3000
   - SANITY_STUDIO_PREVIEW_TOKEN (the same token you created on vercel)
